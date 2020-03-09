@@ -74,4 +74,3 @@ document.querySelector('#cta-img').src = 'img/header-img.png'
 
 
 
-
