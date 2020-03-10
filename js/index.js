@@ -43,17 +43,19 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Nav starts here
 
-document.querySelector('a:first-child').textContent = 'Services'
+// document.querySelector('a:first-child').textContent = 'Services'
 
-document.querySelector('nav a:nth-child(2)').textContent = 'Product'
+document.querySelector('a:first-child').textContent = siteContent['nav']['nav-item-1']
 
-document.querySelector('nav a:nth-child(3)').textContent = 'Vision'
+document.querySelector('nav a:nth-child(2)').textContent =  siteContent['nav']['nav-item-2']
 
-document.querySelector('nav a:nth-child(4)').textContent = 'Features'
+document.querySelector('nav a:nth-child(3)').textContent = siteContent['nav']['nav-item-3']
 
-document.querySelector('nav a:nth-child(5)').textContent = 'About'
+document.querySelector('nav a:nth-child(4)').textContent = siteContent['nav']['nav-item-4']
 
-document.querySelector('a:last-child').textContent = 'Contact'
+document.querySelector('nav a:nth-child(5)').textContent = siteContent['nav']['nav-item-5']
+
+document.querySelector('a:last-child').textContent = siteContent['nav']['nav-item-6']
 
 const newHome = document.createElement('a');
 
@@ -79,55 +81,55 @@ Array.from(navColor).forEach(element => {
 
 // CTA begins here 
 
-document.querySelector('h1').textContent = 'DOM Is Awesome'
+document.querySelector('h1').textContent = siteContent['cta']['h1']
 
-document.querySelector('button').textContent = 'Get Started'
+document.querySelector('button').textContent = siteContent['cta']['button']
 
-document.getElementById('cta-img').src = 'img/header-img.png'
+document.getElementById('cta-img').src = siteContent['cta']['img-src']
 
 // This closes CTA 
 
 // Main-content begins here 
 
-document.getElementsByTagName('h4')[0].textContent = 'Features'
+document.getElementsByTagName('h4')[0].textContent = siteContent['main-content']['features-h4']
 
-document.getElementsByTagName('p')[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+document.getElementsByTagName('p')[0].textContent = siteContent['main-content']['features-content']
 
-document.getElementsByTagName('h4')[1].textContent = 'About'
+document.getElementsByTagName('h4')[1].textContent = siteContent['main-content']['about-h4']
 
-document.getElementsByTagName('p')[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+document.getElementsByTagName('p')[1].textContent = siteContent['main-content']['about-content']
 
-document.getElementsByTagName('h4')[2].textContent = 'Services'
+document.getElementsByTagName('h4')[2].textContent = siteContent['main-content']['services-h4']
 
-document.getElementsByTagName('p')[2].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+document.getElementsByTagName('p')[2].textContent = siteContent['main-content']['services-content']
 
-document.getElementsByTagName('h4')[3].textContent = 'Product'
+document.getElementsByTagName('h4')[3].textContent = siteContent['main-content']['product-h4']
 
-document.getElementsByTagName('p')[3].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+document.getElementsByTagName('p')[3].textContent = siteContent['main-content']['product-content']
 
-document.getElementsByTagName('h4')[4].textContent = 'Vision'
+document.getElementsByTagName('h4')[4].textContent = siteContent['main-content']['vision-h4']
 
-document.getElementsByTagName('p')[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+document.getElementsByTagName('p')[4].textContent = siteContent['main-content']['vision-content']
 
-document.getElementById('middle-img').src = 'img/mid-page-accent.jpg'
+document.getElementById('middle-img').src = siteContent['main-content']['middle-img-src']
 
 // This closes main-content
 
 // Contact section begins here
 
-document.getElementsByTagName('h4')[5].textContent = 'Contact'
+document.getElementsByTagName('h4')[5].textContent = siteContent['contact']['contact-h4']
 
-document.getElementsByTagName('p')[5].textContent = '123 Way 456 Street Somewhere, USA'
+document.getElementsByTagName('p')[5].textContent = siteContent['contact']['address']
 
-document.getElementsByTagName('p')[6].textContent = '1 (888) 888-8888'
+document.getElementsByTagName('p')[6].textContent = siteContent['contact']['phone']
 
-document.getElementsByTagName('p')[7].textContent = 'sales@greatidea.io'
+document.getElementsByTagName('p')[7].textContent = siteContent['contact']['email']
 
 // This closes contact section
 
 // Footer begins here 
 
-document.getElementsByTagName('p')[8].textContent = 'Copyright Great Idea! 2018'
+document.getElementsByTagName('p')[8].textContent = siteContent['footer']['copyright']
 
 // This closes the footer
 
