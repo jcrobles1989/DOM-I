@@ -55,6 +55,12 @@ document.querySelector('nav a:nth-child(5)').textContent = 'About'
 
 document.querySelector('a:last-child').textContent = 'Contact'
 
+const navColor = document.getElementsByTagName('a')
+
+for (i = 0; i < navColor.length; i++) {
+  navColor[i].style.color = 'green';
+}
+
 // This closes the nav 
 
 // CTA begins here 
@@ -63,14 +69,52 @@ document.querySelector('h1').textContent = 'DOM Is Awesome'
 
 document.querySelector('button').textContent = 'Get Started'
 
-document.querySelector('#cta-img').src = 'img/header-img.png'
+document.getElementById('cta-img').src = 'img/header-img.png'
 
 // This closes CTA 
 
 // Main-content begins here 
 
+document.getElementsByTagName('h4')[0].textContent = 'Features'
 
+document.getElementsByTagName('p')[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
+document.getElementsByTagName('h4')[1].textContent = 'About'
 
+document.getElementsByTagName('p')[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+document.getElementsByTagName('h4')[2].textContent = 'Services'
+
+document.getElementsByTagName('p')[2].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+document.getElementsByTagName('h4')[3].textContent = 'Product'
+
+document.getElementsByTagName('p')[3].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+document.getElementsByTagName('h4')[4].textContent = 'Vision'
+
+document.getElementsByTagName('p')[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+document.getElementById('middle-img').src = 'img/mid-page-accent.jpg'
+
+// This closes main-content
+
+// Contact section begins here
+
+document.getElementsByTagName('h4')[5].textContent = 'Contact'
+
+document.getElementsByTagName('p')[5].textContent = '123 Way 456 Street Somewhere, USA'
+
+document.getElementsByTagName('p')[6].textContent = '1 (888) 888-8888'
+
+document.getElementsByTagName('p')[7].textContent = 'sales@greatidea.io'
+
+// This closes contact section
+
+// Footer begins here 
+
+document.getElementsByTagName('p')[8].textContent = 'Copyright Great Idea! 2018'
+
+// This closes the footer
 
 
