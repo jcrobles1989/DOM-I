@@ -55,11 +55,25 @@ document.querySelector('nav a:nth-child(5)').textContent = 'About'
 
 document.querySelector('a:last-child').textContent = 'Contact'
 
+const newHome = document.createElement('a');
+
+const newFAQ = document.createElement('a')
+
+newHome.textContent = 'Home'
+
+newFAQ.textContent = 'FAQ';
+
+const parentElement = document.querySelector('nav');
+
+parentElement.prepend(newHome)
+
+parentElement.appendChild(newFAQ);
+
 const navColor = document.getElementsByTagName('a')
 
-for (i = 0; i < navColor.length; i++) {
-  navColor[i].style.color = 'green';
-}
+Array.from(navColor).forEach(element => {
+  element.style.color = 'green';
+})
 
 // This closes the nav 
 
