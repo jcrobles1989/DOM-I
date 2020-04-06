@@ -43,7 +43,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Nav starts here
 
-// document.querySelector('a:first-child').textContent = 'Services'
+document.querySelector('a:first-child').textContent = 'Services'
 
 document.querySelector('a:first-child').textContent = siteContent['nav']['nav-item-1']
 
